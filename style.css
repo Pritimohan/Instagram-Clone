@@ -35,7 +35,6 @@
   width: 100vw;
   position: relative;
   display: flex;
-
 }
 /* #main ::-webkit-scrollbar{
   display: none;
@@ -72,7 +71,7 @@
   margin: 0px 15px;
   padding-left: 15px;
   cursor: pointer;
-  animation: fade 1s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .options > h3 {
   display: inline-block;
@@ -81,6 +80,7 @@
 }
 .options > i {
   font-size: 22px;
+  transition: all 0.3s ease-in-out;
 }
 .options:hover {
   background-color: var(--opposit-color);
@@ -99,7 +99,7 @@
   display: none;
 }
 /* ---------------------------------stories----------------------------------------- */
-.full-screen-stories{
+.full-screen-stories {
   width: 400px;
   height: 90vh;
   background-color: var(--opposit-color);
@@ -113,20 +113,20 @@
   overflow: hidden;
   animation: fade 0.4s linear;
 }
-.close{
+.close {
   width: fit-content;
   /* background-color: brown; */
-  position:absolute;
+  position: absolute;
   right: 2%;
   top: 2%;
   z-index: 5;
   display: none;
 }
-.close>i{
+.close > i {
   font-size: 2rem;
   color: var(--big-heart-color);
 }
-.full-screen-stories>img{
+.full-screen-stories > img {
   width: 100%;
   object-fit: cover;
 }
@@ -154,7 +154,7 @@
   margin: 0px 5px;
   overflow: hidden;
 }
-.stories>img{
+.stories > img {
   width: 100%;
   object-fit: cover;
 }
@@ -320,6 +320,7 @@
   width: 100%;
   object-fit: cover;
 }
+/* -------------------------------------heart icon---------------------------------- */
 .feed-img > i {
   position: absolute;
   color: var(--big-heart-color);
@@ -330,8 +331,6 @@
   transform: translate(-50%, -50%) scale(0);
   transition: transform 0.3s linear;
 }
-
-
 .engagement-icon {
   width: 100%;
   height: fit-content;

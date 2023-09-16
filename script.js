@@ -1,12 +1,11 @@
 //like --->
-let heart = document.querySelector("#big-heart");
+let heart = document.querySelectorAll("#big-heart");
 let img_box = document.querySelectorAll("#feed-img");
-
-img_box.forEach((img) => {
+img_box.forEach((img, index) => {
   img.addEventListener("dblclick", () => {
-    heart.style.transform = "translate(-50%, -50%) scale(1)";
+    heart[index].style.transform = "translate(-50%, -50%) scale(1)";
     setTimeout(() => {
-      heart.style.transform = "translate(-50%, -50%) scale(0)";
+      heart[index].style.transform = "translate(-50%, -50%) scale(0)";
     }, 700);
   });
 });
